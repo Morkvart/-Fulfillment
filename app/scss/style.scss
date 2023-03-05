@@ -11,7 +11,8 @@
 
 .header__top {
   height: 80px;
-  background-color: #dedede;
+  //   background-color: #dedede;
+  background-color: $dark;
 }
 
 .header__top-inner {
@@ -22,13 +23,22 @@
 }
 
 .logo {
-  font-size: 50px;
+  font-size: 46px;
   font-weight: 500;
+  color: $yellow;
+}
+
+.header__tagline {
+  color: $darkyellow;
+  font-weight: 700;
+  font-size: 24px;
+  margin-right: 10px;
+  white-space: nowrap;
 }
 
 .menu__list {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   font-weight: 500;
   font-size: 18px;
 }
@@ -36,6 +46,7 @@
 .menu__item {
   position: relative;
   padding-bottom: 5px;
+  color: #fff;
   &::after {
     content: "";
     height: 3px;
@@ -43,7 +54,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: rgb(247, 60, 60);
+    background-color: $yellow;
     transition: width 0.5s;
   }
   &:hover::after {
@@ -79,6 +90,10 @@
 }
 
 // ======================== services
+.services {
+  background-color: $dark;
+}
+
 .services__inner {
   max-width: 1200px;
   padding-top: 100px;
@@ -87,6 +102,7 @@
 
 .services__title {
   margin-bottom: 50px;
+  color: #fff;
 }
 
 .services__list {
@@ -98,7 +114,8 @@
 
 .services__item {
   text-align: center;
-  background-color: #ffeb6c;
+  //   background-color: #ffeb6c;
+  background-color: $yellow;
   flex: 1 0 30%;
   padding: 50px 30px;
   border-radius: 30px;
@@ -119,7 +136,7 @@
 
 // ============ advantages
 .advantages {
-  background-color: rgba($color: #dedede, $alpha: 0.3);
+  background-color: #fff;
 }
 
 .advantages__inner {
@@ -170,7 +187,11 @@
   line-height: 1.4;
 }
 
-// ============== request
+// ==============
+.request {
+  background-color: $dark;
+}
+
 .request__inner {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -178,7 +199,8 @@
 }
 
 .request__form {
-  background-color: #dedede;
+  //   background-color: #dedede;
+  background-color: $dark;
   padding: 30px 100px;
   border-radius: 10px;
   display: inline-flex;
@@ -190,12 +212,15 @@
   font-size: 24px;
   max-width: 520px;
   margin-bottom: 30px;
+
+  color: #fff;
 }
 
 .request__label {
   text-align: left;
   font-size: 18px;
   margin-bottom: 5px;
+  color: #fff;
 }
 
 .request__input {
@@ -209,8 +234,10 @@
 }
 // ============== footer
 .footer {
-  background-color: #000;
-  color: #fff;
+  //   background-color: #000;
+  background-color: $yellow;
+  //   background-color: #fff;
+  //   color: #fff;
 }
 
 .footer__inner {
@@ -219,6 +246,16 @@
 }
 
 .footer__title {
+  margin-bottom: 30px;
+  color: $dark;
+}
+
+.footer__tagline {
+  font-weight: 700;
+  font-size: 24px;
+  white-space: nowrap;
+  color: $dark;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -247,7 +284,8 @@
     left: 0;
   }
   &:hover {
-    color: #fff2a1;
+    // color: #fff2a1;
+    color: #fff;
   }
 }
 
@@ -285,12 +323,15 @@
 }
 
 .popup__content {
-  background-color: #dedede;
+  //   background-color: #dedede;
+  background-color: $dark;
   max-width: 650px;
   padding: 40px 20px;
   border-radius: 10px;
   position: relative;
   text-align: center;
+
+  color: $yellow;
 }
 
 .popup__close {
@@ -312,6 +353,10 @@
 
 .popup__form {
   padding: 20px 20px;
+}
+
+.popup__btn {
+  color: $dark;
 }
 
 // ======================= hamburger
@@ -347,7 +392,8 @@
   width: 36px;
   height: 3px;
   border-radius: 10px;
-  background-color: #000;
+  //   background-color: #000;
+  background-color: $yellow;
   transition: transform 0.5s, background-color 0.5s;
 }
 
@@ -377,7 +423,8 @@
     overflow: hidden;
     flex-direction: column;
     align-items: center;
-    background-color: #dedede;
+    // background-color: #dedede;
+    background-color: $dark;
     transition: height 0.5s, padding 0.5s;
   }
 
@@ -398,6 +445,10 @@
 }
 
 @media screen and (max-width: 425px) {
+  .logo {
+    font-size: 40px;
+  }
+
   .header__title {
     font-size: 40px;
   }
@@ -409,5 +460,17 @@
   .advantages__title,
   .footer__title {
     font-size: 38px;
+  }
+
+  .header__tagline {
+    font-size: 18px;
+    margin-right: 44px;
+  }
+
+  .contacts__link {
+    font-size: 20px;
+    &::before {
+      top: -4px;
+    }
   }
 }

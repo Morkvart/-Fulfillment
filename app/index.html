@@ -18,7 +18,7 @@
                         WMP
                         <img class="logo__img" src="" alt="">
                     </div>
-                    <!-- <p class="header__tagline"></p> -->
+                    <p class="header__tagline">Работаем 24/7</p>
 
                     <input type="checkbox" id="menu-toggler">
                     <label for="menu-toggler" class="hamburger">
@@ -36,7 +36,7 @@
                                 <a class="menu__link" href="#advantages">Преимущества</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Оставить заявку</a>
+                                <a class="menu__link" href="#request">Оставить заявку</a>
                             </li>
                         </ul>
                     </nav>
@@ -49,7 +49,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="services" id="#servives">
+            <section class="services" id="servives">
                 <div class="services__inner section__inner">
                     <h2 class="services__title section__title">Какие услуги мы предоставляем</h2>
                     <ul class="services__list">
@@ -87,7 +87,7 @@
                 </div>
             </section>
 
-            <section class="advantages" id="#advantages">
+            <section class="advantages" id="advantages">
                 <div class="advantages__inner section__inner">
                     <h2 class="advantages__title section__title">Преимущества</h2>
                     <div class="advantages__list">
@@ -96,8 +96,8 @@
                                 <img src="./images/advantages/savingmoney.svg" alt="">
                             </div>
                             <p class="advantages__item-title">Снижение затрат</p>
-                            <p class="advantages__item-subtitle">С нами вы снизите затраты на покупку материалов и
-                                доставки на склады Wildberries и Ozon</p>
+                            <p class="advantages__item-subtitle">C нами вы снизите затраты на доставку и покупку
+                                материалов</p>
                         </div>
                         <div class="advantages__item">
                             <div class="advantages__item-img">
@@ -120,7 +120,7 @@
                 </div>
             </section>
 
-            <section class="request">
+            <section class="request" id="request">
                 <div class="request__inner section__inner">
                     <form class="request__form" action="./sendmail.php" id="request-form" method="post">
                         <p class="request__title">Оставьте свои контактные данные и мы оперативно ответим на все Ваши
@@ -141,6 +141,7 @@
         <footer class="footer">
             <div class="footer__inner section__inner">
                 <h2 class="footer__title section__title">Наши контакты</h2>
+                <p class="footer__tagline">Работаем 24/7</p>
                 <div class="contacts">
                     <a class="contacts__phone contacts__link" href="tel:+375291588552">+375 (29) 158-85-52 </a>
                     <a class="contacts__telegram contacts__link" href="https://t.me/MaksimGerachenko">Telegram</a>
@@ -160,7 +161,7 @@
                     <label class="request__label" for="tel">Ваш телефон</label>
                     <input class="request__tel request__input _req" type="text" id="tel" placeholder="+375 33 999 99 99"
                         onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode==43'>
-                    <button type="submit" class="request__btn btn">Отправить</button>
+                    <button type="submit" class="request__btn btn popup__btn">Отправить</button>
                 </form>
             </div>
         </div>
