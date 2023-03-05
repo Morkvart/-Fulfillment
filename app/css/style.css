@@ -139,7 +139,11 @@ body {
 .logo {
   font-size: 46px;
   font-weight: 500;
-  color: #ffc800;
+  color: #212931;
+  background-color: #ffc800;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .header__tagline {
@@ -259,7 +263,7 @@ body {
 }
 
 .advantages {
-  background-color: #fff;
+  background-color: rgba(255, 200, 0, 0.3);
   border-bottom: 2px solid #ffc800;
 }
 
