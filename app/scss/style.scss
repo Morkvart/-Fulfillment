@@ -7,12 +7,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 2px solid $yellow;
 }
 
 .header__top {
   height: 80px;
   //   background-color: #dedede;
   background-color: $dark;
+  border-bottom: 2px solid $yellow;
 }
 
 .header__top-inner {
@@ -92,6 +94,7 @@
 // ======================== services
 .services {
   background-color: $dark;
+  border-bottom: 2px solid $yellow;
 }
 
 .services__inner {
@@ -137,6 +140,7 @@
 // ============ advantages
 .advantages {
   background-color: #fff;
+  border-bottom: 2px solid $yellow;
 }
 
 .advantages__inner {
@@ -190,6 +194,7 @@
 // ==============
 .request {
   background-color: $dark;
+  border-bottom: 2px solid #fff;
 }
 
 .request__inner {
@@ -234,10 +239,7 @@
 }
 // ============== footer
 .footer {
-  //   background-color: #000;
   background-color: $yellow;
-  //   background-color: #fff;
-  //   color: #fff;
 }
 
 .footer__inner {
@@ -263,7 +265,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //   justify-content: center;
   gap: 20px;
 }
 
@@ -312,6 +313,7 @@
 
   opacity: 0;
   visibility: hidden;
+  transition: opacity 0.5s;
 }
 
 .popup__body {
@@ -420,6 +422,7 @@
     left: 0;
     width: 100%;
     height: 0;
+    gap: 40px;
     overflow: hidden;
     flex-direction: column;
     align-items: center;

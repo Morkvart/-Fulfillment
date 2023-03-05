@@ -114,11 +114,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 2px solid #ffc800;
 }
 
 .header__top {
   height: 80px;
   background-color: #212931;
+  border-bottom: 2px solid #ffc800;
 }
 
 .header__top-inner {
@@ -207,6 +209,7 @@ body {
 
 .services {
   background-color: #212931;
+  border-bottom: 2px solid #ffc800;
 }
 
 .services__inner {
@@ -257,6 +260,7 @@ body {
 
 .advantages {
   background-color: #fff;
+  border-bottom: 2px solid #ffc800;
 }
 
 .advantages__inner {
@@ -321,6 +325,7 @@ body {
 
 .request {
   background-color: #212931;
+  border-bottom: 2px solid #fff;
 }
 
 .request__inner {
@@ -444,6 +449,9 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .popup__body {
@@ -560,6 +568,7 @@ body {
     left: 0;
     width: 100%;
     height: 0;
+    gap: 40px;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
