@@ -21,9 +21,33 @@ body {
   flex: 0 0 auto;
 }
 
-%section-inner {
+.section__title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section__inner {
   max-width: 1420px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #ffe434;
+  line-height: 1.4;
+  font-weight: 500;
+  font-size: 18px;
+  transition: background-color 0.5s;
+  &:hover {
+    background-color: #ffdd00;
+  }
+}
+
+._error {
+  box-shadow: 0 0 5px red;
 }

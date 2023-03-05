@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -13,106 +13,157 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__top">
-                <div class="header__top-inner">
+                <div class="header__top-inner section__inner">
                     <div class="logo">
-                        LOGO
+                        WMP
                         <img class="logo__img" src="" alt="">
                     </div>
+                    <!-- <p class="header__tagline"></p> -->
+
+                    <input type="checkbox" id="menu-toggler">
+                    <label for="menu-toggler" class="hamburger">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </label>
+
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a class="menu__link" href="#">О нас</a>
+                                <a class="menu__link" href="#servives">Услуги</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Условия</a>
+                                <a class="menu__link" href="#advantages">Преимущества</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Контакты</a>
+                                <a class="menu__link" href="#">Оставить заявку</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div class="header__body">
+            <div class="header__body section__inner">
                 <h1 class="header__title">Фулфилмент в Минске</h1>
                 <p class="header__subtitle">С нами вы экономите свои время и деньги!</p>
+                <a href="#popup" class="header__btn btn">Получить консультацию</a>
             </div>
         </header>
         <main class="main">
-            <section class="about">
-                <div class="about__inner">
-                    <h2 class="about__title">Какие услуги мы предоставляем</h2>
-                    <ul class="about__list">
-                        <li class="about__item">
-                            <div class="abount__item-img">
-                                <img src="./images/about/storage.svg" alt="">
-                            </div>
-                            <p class="about__item-text">Приемка и хранение вашего товара на складе</p>
+            <section class="services" id="#servives">
+                <div class="services__inner section__inner">
+                    <h2 class="services__title section__title">Какие услуги мы предоставляем</h2>
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <p class="services__item-title">Управление заказами</p>
+                            <p class="services__item-subtitle">Поддерживаем полную синхронизацию с маркетплейсами</p>
                         </li>
-                        <li class="about__item">
-                            <div class="abount__item-img">
-                                <img src="./images/about/assembly.svg" alt="">
-                            </div>
-                            <p class="about__item-text">Комплектация заказов</p>
+                        <li class="services__item">
+                            <p class="services__item-title">Приём товара</p>
+                            <p class="services__item-subtitle">Оперативно принимаем или осуществляем забор товара со
+                                склада поставщика, храним товар на нашем складе</p>
                         </li>
-                        <li class="about__item">
-                            <div class="abount__item-img">
-                                <img src="./images/about/package.svg" alt="">
-                            </div>
-                            <p class="about__item-text">Упаковка и маркировка товара</p>
+                        <li class="services__item">
+                            <p class="services__item-title">Обработка заказов</p>
+                            <p class="services__item-subtitle">Упаковываем, маркируем и проверяем на брак товар на своем
+                                складе в соответствии с требованиями маркетплейсов</p>
                         </li>
-                        <li class="about__item">
-                            <div class="abount__item-img">
-                                <img src="./images/about/delivery.svg" alt="">
-                            </div>
-                            <p class="about__item-text">Доставка на маркетплейсы либо конечным покупателям</p>
+                        <li class="services__item">
+                            <p class="services__item-title">Хранение и сортировка</p>
+                            <p class="services__item-subtitle">Разместив товары на нашем складе, вы сократите временные
+                                и финансовые затраты на транспортировку товара. Эту заботу мы берем на себя!</p>
+                        </li>
+                        <li class="services__item">
+                            <p class="services__item-title">Доставка заказов</p>
+                            <p class="services__item-subtitle">Вся логистическая цепочка оптимизирована по времени.
+                                Обработка заявок, забор товара и складские работы производятся в максимально сжатые
+                                сроки</p>
+                        </li>
+                        <li class="services__item">
+                            <p class="services__item-title">Возврат заказов</p>
+                            <p class="services__item-subtitle">Забираем возвраты со складов маркетплейсов, оформляем все
+                                необходимые документы и доставляем до нашего склада</p>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section class="conditions">
-                <div class="conditions__inner">
-                    <h2 class="conditions__title">Условия</h2>
-                    <div class="conditions__content">
-                        <div class="conditions__img">
-                            <img src="./images/conditions.svg" alt="">
+            <section class="advantages" id="#advantages">
+                <div class="advantages__inner section__inner">
+                    <h2 class="advantages__title section__title">Преимущества</h2>
+                    <div class="advantages__list">
+                        <div class="advantages__item">
+                            <div class="advantages__item-img">
+                                <img src="./images/advantages/savingmoney.svg" alt="">
+                            </div>
+                            <p class="advantages__item-title">Снижение затрат</p>
+                            <p class="advantages__item-subtitle">С нами вы снизите затраты на покупку материалов и
+                                доставки на склады Wildberries и Ozon</p>
                         </div>
-                        <div class="conditions__list">
-                            <div class="conditions__item">
-                                <p class="conditions__item-title">Работаем с любым товаром</p>
-                                <p class="conditions__item-subtitle">Закроем все потребности клиента.</p>
+                        <div class="advantages__item">
+                            <div class="advantages__item-img">
+                                <img src="./images/advantages/savingtime.svg" alt="">
                             </div>
-                            <div class="conditions__item">
-                                <p class="conditions__item-title">Упаковка товара</p>
-                                <p class="conditions__item-subtitle">Стоимость упаковки 1,9 бел. руб если упаковываем
-                                    пленкой стрейч. Если для товара необходима коробка или какая-то ещё более серьезная
-                                    упаковка, то цену согласуем с вами.</p>
+                            <p class="advantages__item-title">Экономия времени</p>
+                            <p class="advantages__item-subtitle">Сэкономите кучу времени и займетесь по-настоящему
+                                важными делами</p>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-img">
+                                <img src="./images/advantages/package.svg" alt="">
                             </div>
-                            <div class="conditions__item">
-                                <p class="conditions__item-title">Расчёт</p>
-                                <p class="conditions__item-subtitle">Работаем по безналичному расчёту. Можем также по
-                                    ЕРИП, если необходимо с карты.</p>
-                            </div>
-                            <div class="conditions__item">
-                                <p class="conditions__item-title">Накладные</p>
-                                <p class="conditions__item-subtitle">Выписываем ТН на ответственное хранение. Если
-                                    удобно клиенту, то один раз в неделю выписываем накладную и подписываем на
-                                    маркетплейс. Если нужно по-другому - оговорим условия.</p>
-                            </div>
+                            <p class="advantages__item-title">Бережная упаковка</p>
+                            <p class="advantages__item-subtitle">Упаковываем согласно стандартам стрейч-пленкой,
+                                пузырчатой. По необходимости в коробки, придавая дизайн для увеличения продаж</p>
                         </div>
                     </div>
+
+                </div>
+            </section>
+
+            <section class="request">
+                <div class="request__inner section__inner">
+                    <form class="request__form" action="./sendmail.php" id="request-form" method="post">
+                        <p class="request__title">Оставьте свои контактные данные и мы оперативно ответим на все Ваши
+                            вопросы!</p>
+                        <label class="request__label" for="name">Ваше имя</label>
+                        <input class="request__name request__input _req" type="text" id="name" placeholder="Николай">
+                        <label class="request__label" for="tel">Ваш телефон</label>
+                        <input class="request__tel request__input _req" type="text" id="tel"
+                            placeholder="+375 33 999 99 99"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode==43'>
+                        <button type="submit" class="request__btn btn">Отправить</button>
+                    </form>
                 </div>
             </section>
         </main>
+
+
         <footer class="footer">
-            <div class="footer__inner">
+            <div class="footer__inner section__inner">
+                <h2 class="footer__title section__title">Наши контакты</h2>
                 <div class="contacts">
-                    <a class="contacts__phone contacts__link" href="tel:+37529158542">+375 (29) 158-54-2</a>
+                    <a class="contacts__phone contacts__link" href="tel:+375291588552">+375 (29) 158-85-52 </a>
                     <a class="contacts__telegram contacts__link" href="https://t.me/MaksimGerachenko">Telegram</a>
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">X</a>
+                <form class="request__form popup__form" action="./sendmail.php" id="request-form" method="post">
+                    <p class="request__title">Оставьте свои контактные данные и мы оперативно ответим на все Ваши
+                        вопросы!</p>
+                    <label class="request__label" for="name">Ваше имя</label>
+                    <input class="request__name request__input _req" type="text" id="name" placeholder="Николай">
+                    <label class="request__label" for="tel">Ваш телефон</label>
+                    <input class="request__tel request__input _req" type="text" id="tel" placeholder="+375 33 999 99 99"
+                        onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode==43'>
+                    <button type="submit" class="request__btn btn">Отправить</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 
