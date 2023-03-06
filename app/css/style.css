@@ -370,6 +370,7 @@ body {
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 20px;
+  color: #212931;
 }
 
 .request__btn {
@@ -624,4 +625,31 @@ body {
   .contacts__link::before {
     top: -4px;
   }
+}
+.thx-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #212931;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thx__title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 10px;
 }

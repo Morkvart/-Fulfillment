@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>WMP</title>
 </head>
 
 <body>
@@ -125,9 +125,9 @@
                         <p class="request__title">Оставьте свои контактные данные и мы оперативно ответим на все Ваши
                             вопросы!</p>
                         <label class="request__label" for="name">Ваше имя</label>
-                        <input class="request__name request__input _req" type="text" id="name" placeholder="Николай">
+                        <input class="request__name request__input _req" type="text" name="name" placeholder="Николай">
                         <label class="request__label" for="tel">Ваш телефон</label>
-                        <input class="request__tel request__input _req" type="text" id="tel"
+                        <input class="request__tel request__input _req" type="text" name="tel"
                             placeholder="+375 33 999 99 99"
                             onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode==43'>
                         <button type="submit" class="request__btn btn">Отправить</button>
@@ -148,6 +148,7 @@
             </div>
         </footer>
     </div>
+
     <div class="popup" id="popup">
         <div class="popup__body">
             <div class="popup__content">
@@ -156,9 +157,10 @@
                     <p class="request__title">Оставьте свои контактные данные и мы оперативно ответим на все Ваши
                         вопросы!</p>
                     <label class="request__label" for="name">Ваше имя</label>
-                    <input class="request__name request__input _req" type="text" id="name" placeholder="Николай">
+                    <input class="request__name request__input _req" type="text" name="name" placeholder="Николай">
                     <label class="request__label" for="tel">Ваш телефон</label>
-                    <input class="request__tel request__input _req" type="text" id="tel" placeholder="+375 33 999 99 99"
+                    <input class="request__tel request__input _req" type="text" name="tel"
+                        placeholder="+375 33 999 99 99"
                         onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode==43'>
                     <button type="submit" class="request__btn btn popup__btn">Отправить</button>
                 </form>

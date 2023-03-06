@@ -1,5 +1,5 @@
 <?php
-$to = 'test@test.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
+$to = 'test@mail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
 $subject = 'Заявка на звонок'; //Заголовок сообщения
 $message = '
             <html>
@@ -14,4 +14,5 @@ $message = '
 $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
 $headers .= "From: Отправитель <test@test.com>\r\n"; //Наименование и почта отправителя
 mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
+header("Location: thx.html");
 ?>
