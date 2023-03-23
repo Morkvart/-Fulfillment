@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+
     <link rel="stylesheet" href="./css/style.css">
     <title>WMP</title>
 </head>
@@ -139,11 +144,23 @@
 
         <footer class="footer">
             <div class="footer__inner section__inner">
-                <h2 class="footer__title section__title">Наши контакты</h2>
+                <h2 class="footer__title section__title">Как нас найти?</h2>
                 <p class="footer__tagline">Работаем 24/7</p>
                 <div class="contacts">
                     <a class="contacts__phone contacts__link" href="tel:+375291588552">+375 (29) 158-85-52 </a>
                     <a class="contacts__telegram contacts__link" href="https://t.me/MaksimGerachenko">Telegram</a>
+                    <p class="contacts__address contacts__link">Минск, ул. Маяковского 101Г</p>
+                </div>
+
+            </div>
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f3cca858415a509944fc5368c17f794d786ac9107cfcc2eb0d24b19a721ef4e&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+                <div class="contacts contacts-map">
+                    <p class="contacts__title">Контакты</p>
+                    <a class="contacts__phone contacts__link" href="tel:+375291588552">+375 (29) 158-85-52 </a>
+                    <a class="contacts__telegram contacts__link" href="https://t.me/MaksimGerachenko">Telegram</a>
+                    <p class="contacts__address contacts__link">Минск, ул. Маяковского 101Г</p>
                 </div>
             </div>
         </footer>
@@ -168,6 +185,8 @@
         </div>
     </div>
     <script src="./js/main.js"></script>
+
+
 </body>
 
 </html>

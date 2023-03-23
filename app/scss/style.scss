@@ -125,7 +125,9 @@
 .services__item {
   text-align: center;
   //   background-color: #ffeb6c;
-  background-color: $yellow;
+  // background-color: $yellow;
+  // background-color: #ffe434;
+  background-color: #ffe279;
   flex: 1 0 30%;
   padding: 50px 30px;
   border-radius: 30px;
@@ -248,12 +250,13 @@
 }
 // ============== footer
 .footer {
-  background-color: $yellow;
+  // background-color: $yellow;
+  background-color: rgba($color: $yellow, $alpha: 0.3);
 }
 
 .footer__inner {
   padding-top: 50px;
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
 }
 
 .footer__title {
@@ -270,18 +273,35 @@
   margin-bottom: 30px;
 }
 
+.map {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid $dark;
+  margin-bottom: 50px;
+}
+
 .contacts {
-  display: flex;
+  // display: flex;
+  display: none;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.contacts__link {
+.contacts__title {
+  color: $dark;
   font-size: 24px;
+  font-weight: 700;
+}
+
+.contacts__link {
+  font-size: 20px;
   position: relative;
   padding-left: 40px;
-  transition: color 0.5s;
+  transition: text-shadow 0.5s;
   &::before {
     content: "";
     display: block;
@@ -290,12 +310,12 @@
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
   }
   &:hover {
-    // color: #fff2a1;
-    color: #fff;
+    text-shadow: 0 0 1px $dark;
   }
 }
 
@@ -309,6 +329,29 @@
   &::before {
     background-image: url("../images/contacts/telegram.svg");
   }
+}
+
+.contacts__address {
+  &::before {
+    background-image: url("../images/contacts/address.svg");
+  }
+  &:hover {
+    text-shadow: none;
+  }
+}
+
+.contacts-map {
+  display: flex;
+  background-color: #ffe434;
+  align-items: flex-start;
+
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  flex-direction: column;
+
+  padding: 20px;
+  border-radius: 20px;
 }
 
 // ========================== popup
@@ -454,6 +497,14 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  .contacts {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .contacts-map {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -480,10 +531,7 @@
   }
 
   .contacts__link {
-    font-size: 20px;
-    &::before {
-      top: -4px;
-    }
+    font-size: 18px;
   }
 }
 
