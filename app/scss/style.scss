@@ -3,11 +3,13 @@
 @import "global";
 
 .header {
-  background-image: url("../images/headerbg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url("../images/headerbg.jpg");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   border-bottom: 2px solid $yellow;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header__top {
@@ -26,24 +28,21 @@
 
 .logo {
   font-size: 46px;
-  font-weight: 500;
-  //   color: $yellow;
-  color: $dark;
+  font-weight: 700;
+  color: #000;
   background-color: $yellow;
-  //   display: inline-block;
   text-align: center;
-  //   padding-left: 10px;
   padding: 5px;
   border-radius: 10px;
 }
 
-.header__tagline {
-  color: $darkyellow;
-  font-weight: 700;
-  font-size: 24px;
-  margin-right: 10px;
-  white-space: nowrap;
-}
+// .header__tagline {
+//   color: $darkyellow;
+//   font-weight: 700;
+//   font-size: 24px;
+//   margin-right: 10px;
+//   white-space: nowrap;
+// }
 
 .menu__list {
   display: flex;
@@ -96,6 +95,21 @@
   display: inline-block;
   text-align: center;
   margin: 0 auto 200px;
+  font-weight: 700;
+  padding: 30px;
+  font-size: 22px;
+}
+
+.header__bg-img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  // opacity: 0.8;
 }
 
 // ======================== services
@@ -124,9 +138,6 @@
 
 .services__item {
   text-align: center;
-  //   background-color: #ffeb6c;
-  // background-color: $yellow;
-  // background-color: #ffe434;
   background-color: #ffe279;
   flex: 1 0 30%;
   padding: 50px 30px;
@@ -169,7 +180,8 @@
 }
 
 .advantages__item {
-  flex: 1 0 30%;
+  flex: 1 0 40%;
+  // width: 20%;
   text-align: center;
   padding: 10px;
   min-width: 240px;
@@ -199,6 +211,12 @@
 .advantages__item-subtitle {
   font-size: 18px;
   line-height: 1.4;
+  text-align: justify;
+  max-width: 500px;
+  margin: auto;
+  span {
+    font-weight: 700;
+  }
 }
 
 // ==============
@@ -223,12 +241,18 @@
 }
 
 .request__title {
-  font-weight: 500;
-  font-size: 24px;
-  max-width: 520px;
-  margin-bottom: 30px;
+  // font-weight: 500;
+  // font-size: 24px;
+  // max-width: 520px;
+  // margin-bottom: 20px;
 
   color: #fff;
+}
+
+.request__subtitle {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
 }
 
 .request__label {
@@ -264,14 +288,14 @@
   color: $dark;
 }
 
-.footer__tagline {
-  font-weight: 700;
-  font-size: 24px;
-  white-space: nowrap;
-  color: $dark;
-  text-align: center;
-  margin-bottom: 30px;
-}
+// .footer__tagline {
+//   font-weight: 700;
+//   font-size: 24px;
+//   white-space: nowrap;
+//   color: $dark;
+//   text-align: center;
+//   margin-bottom: 30px;
+// }
 
 .map {
   max-width: 1200px;
@@ -331,6 +355,18 @@
   }
 }
 
+.contacts__viber {
+  &::before {
+    background-image: url("../images/contacts/viber.svg");
+  }
+}
+
+.contacts__insta {
+  &::before {
+    background-image: url("../images/contacts/insta.svg");
+  }
+}
+
 .contacts__address {
   &::before {
     background-image: url("../images/contacts/address.svg");
@@ -352,6 +388,19 @@
 
   padding: 20px;
   border-radius: 20px;
+}
+
+.about {
+  background-color: $dark;
+}
+
+.about__inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  max-width: 490px;
+  font-size: 14px;
 }
 
 // ========================== popup
@@ -484,7 +533,7 @@
   }
 
   .header__title {
-    font-size: 56px;
+    font-size: 52px;
   }
 
   .request__form {
@@ -525,10 +574,10 @@
     font-size: 38px;
   }
 
-  .header__tagline {
-    font-size: 18px;
-    margin-right: 44px;
-  }
+  // .header__tagline {
+  //   font-size: 18px;
+  //   margin-right: 44px;
+  // }
 
   .contacts__link {
     font-size: 18px;

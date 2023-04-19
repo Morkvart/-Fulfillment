@@ -22,7 +22,7 @@
                     <div class="logo">
                         WMP
                     </div>
-                    <p class="header__tagline">Работаем 24/7</p>
+                    <!-- <p class="header__tagline">Работаем 24/7</p> -->
 
                     <input type="checkbox" id="menu-toggler">
                     <label for="menu-toggler" class="hamburger">
@@ -42,15 +42,22 @@
                             <li class="menu__item">
                                 <a class="menu__link" href="#request">Оставить заявку</a>
                             </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#contacts">Контакты</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </div>
+
             <div class="header__body section__inner">
-                <h1 class="header__title">Фулфилмент в Минске</h1>
-                <p class="header__subtitle">С нами вы экономите свои время и деньги!</p>
-                <a href="#popup" class="header__btn btn">Получить консультацию</a>
+                <h1 class="header__title">Фулфилмент на маркетплейсы Wildberries и Ozon</h1>
+                <p class="header__subtitle">Хранение, упаковка и доставка вашего товара на склады маркетплейсов</p>
+                <p class="header__subtitle">Различные виды упаковки</p>
+                <p class="header__subtitle">Работаем без выходных и праздников</p>
+                <a href="#popup" class="header__btn btn">Перезвоните мне</a>
             </div>
+            <img class="header__bg-img" src="./images/headerbg.jpg" alt="">
         </header>
         <main class="main">
             <section class="services" id="servives">
@@ -93,31 +100,41 @@
 
             <section class="advantages" id="advantages">
                 <div class="advantages__inner section__inner">
-                    <h2 class="advantages__title section__title">Преимущества</h2>
+                    <h2 class="advantages__title section__title">Преимущества работы с нами</h2>
                     <div class="advantages__list">
                         <div class="advantages__item">
                             <div class="advantages__item-img">
                                 <img src="./images/advantages/savingmoney.svg" alt="">
                             </div>
-                            <p class="advantages__item-title">Снижение затрат</p>
-                            <p class="advantages__item-subtitle">C нами вы снизите затраты на доставку и покупку
-                                материалов</p>
+                            <p class="advantages__item-title">Экономия</p>
+                            <p class="advantages__item-subtitle">Продавцу не нужно арендовать или содержать собственный
+                                склад, продумывать всю логистику, всю эту работу берёт на себя фулфилмент, а также
+                                осуществляется быстрая обработка и доставка заказов</p>
                         </div>
                         <div class="advantages__item">
                             <div class="advantages__item-img">
-                                <img src="./images/advantages/savingtime.svg" alt="">
+                                <img src="./images/advantages/progress.svg" alt="">
                             </div>
-                            <p class="advantages__item-title">Экономия времени</p>
-                            <p class="advantages__item-subtitle">Сэкономите кучу времени и займетесь по-настоящему
-                                важными делами</p>
+                            <p class="advantages__item-title">Прогресс</p>
+                            <p class="advantages__item-subtitle">Развитие, поиск нового товара, расширения каналов
+                                сбыта, больше не нужно переживать за то, как это всё упаковать и отвезти</p>
                         </div>
                         <div class="advantages__item">
                             <div class="advantages__item-img">
                                 <img src="./images/advantages/package.svg" alt="">
                             </div>
-                            <p class="advantages__item-title">Бережная упаковка</p>
-                            <p class="advantages__item-subtitle">Упаковываем согласно стандартам стрейч-пленкой,
-                                пузырчатой. По необходимости в коробки, придавая дизайн для увеличения продаж</p>
+                            <p class="advantages__item-title">Низкие цены</p>
+                            <p class="advantages__item-subtitle">Средняя стоимость наших услуг <span>1.5р</span>,
+                                минимальная от <span> 0.70р </span>, при нашей упаковке, хранение бесплатное. <br>
+                                Отдельное хранение товара <span> 30р </span> за паллетоместо</p>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-img">
+                                <img src="./images/advantages/support.svg" alt="">
+                            </div>
+                            <p class="advantages__item-title">Поддержка</p>
+                            <p class="advantages__item-subtitle">Получение быстрой обратной связи и помощь в решении
+                                вопросов</p>
                         </div>
                     </div>
 
@@ -127,8 +144,10 @@
             <section class="request" id="request">
                 <div class="request__inner section__inner">
                     <form class="request__form" action="./sendmail.php" id="request-form" method="post">
-                        <p class="request__title">Оставьте свои контактные данные и мы оперативно ответим на все Ваши
-                            вопросы!</p>
+                        <!-- <p class="request__title">Оставьте свои контактные данные и мы оперативно ответим на все Ваши
+                            вопросы!</p> -->
+                        <p class="request__title section__title">Заказать обратный звонок</p>
+                        <p class="request__subtitle">Мы оперативно перезвоним и рассчитаем Ваш кейс</p>
                         <label class="request__label" for="name">Ваше имя</label>
                         <input class="request__name request__input _req" type="text" name="name" placeholder="Николай">
                         <label class="request__label" for="tel">Ваш телефон</label>
@@ -143,12 +162,15 @@
 
 
         <footer class="footer">
-            <div class="footer__inner section__inner">
+            <div class="footer__inner section__inner" id="contacts">
                 <h2 class="footer__title section__title">Как нас найти?</h2>
-                <p class="footer__tagline">Работаем 24/7</p>
+                <!-- <p class="footer__tagline">Работаем 24/7</p> -->
                 <div class="contacts">
                     <a class="contacts__phone contacts__link" href="tel:+375291588552">+375 (29) 158-85-52 </a>
                     <a class="contacts__telegram contacts__link" href="https://t.me/MaksimGerachenko">Telegram</a>
+                    <a class="contacts__viber contacts__link" href="viber://chat?number=%2B375291588542">Viber</a>
+                    <a class="contacts__insta contacts__link"
+                        href="https://instagram.com/wmpfulfillment?igshid=MGNiNDI5ZTU=" target="_blank">Instagram</a>
                     <p class="contacts__address contacts__link">Минск, ул. Маяковского 101Г</p>
                 </div>
 
@@ -160,7 +182,28 @@
                     <p class="contacts__title">Контакты</p>
                     <a class="contacts__phone contacts__link" href="tel:+375291588552">+375 (29) 158-85-52 </a>
                     <a class="contacts__telegram contacts__link" href="https://t.me/MaksimGerachenko">Telegram</a>
+                    <a class="contacts__viber contacts__link" href="viber://chat?number=%2B375291588542">Viber</a>
+                    <a class="contacts__insta contacts__link"
+                        href="https://instagram.com/wmpfulfillment?igshid=MGNiNDI5ZTU=" target="_blank">Instagram</a>
                     <p class="contacts__address contacts__link">Минск, ул. Маяковского 101Г</p>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about__inner section__inner">
+                    <nav class="about__nav"></nav>
+                    <div class="about__list">
+                        <p>Индивидуальный предприниматель</p>
+                        <p>Геращенко Максим Александрович</p>
+                        <p>Почтовый адрес: Республика Беларусь, 220052, Минская область, г. Минск, ул Маяковского 101Г
+                        </p>
+                        <p>УНП 490848869</p>
+                        <p>Банковские реквизиты:</p>
+                        <p>р/с BY09 BPSB 3013 0757 2410 0000 0933</p>
+                        <p>ОАО "ПРИОРБАНК</p>
+                        <p>BIC: PJCBBY2X</p>
+                        <p>Телефоны: +375 291588542</p>
+                        <p>E-mail: makc202121@mail.ru</p>
+                    </div>
                 </div>
             </div>
         </footer>

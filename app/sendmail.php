@@ -1,5 +1,5 @@
 <?php
-$to = 'maksimgerasenko568@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
+$to = 'maksimgerasenko568@gmail.com, dorin_andrey@mail.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
 $subject = 'Заявка на звонок'; //Заголовок сообщения
 $message = '
             <html>
@@ -12,7 +12,8 @@ $message = '
                 </body>
             </html>'; //Текст нащего сообщения можно использовать HTML теги
 $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-$headers .= "From: Отправитель <test@test.com>\r\n"; //Наименование и почта отправителя
+$headers .= "From: Отправитель <wmpfull.by>\r\n"; //Наименование и почта отправителя
+
 mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
 header("Location: thx.html");
 ?>
