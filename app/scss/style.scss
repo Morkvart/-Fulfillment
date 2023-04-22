@@ -3,10 +3,6 @@
 @import "global";
 
 .header {
-  // background-image: url("../images/headerbg.jpg");
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
   border-bottom: 2px solid $yellow;
   position: relative;
   background-color: rgba(0, 0, 0, 0.3);
@@ -14,7 +10,7 @@
 
 .header__top {
   height: 80px;
-  //   background-color: #dedede;
+  // height: auto;
   background-color: $dark;
   border-bottom: 2px solid $yellow;
 }
@@ -34,15 +30,40 @@
   text-align: center;
   padding: 5px;
   border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-// .header__tagline {
-//   color: $darkyellow;
-//   font-weight: 700;
-//   font-size: 24px;
-//   margin-right: 10px;
-//   white-space: nowrap;
-// }
+.menu__contacts {
+  margin-left: 20px;
+  .menu__contacts-link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    transition: filter 0.3s;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      filter: drop-shadow(0 0 3px #fff);
+    }
+  }
+  .menu__phone {
+    background-image: url("../images/contacts/phone.svg");
+  }
+  .menu__telegram {
+    background-image: url("../images/contacts/telegram.svg");
+  }
+  .menu__viber {
+    background-image: url("../images/contacts/viber.svg");
+  }
+  .menu__insta {
+    background-image: url("../images/contacts/insta.svg");
+  }
+}
 
 .menu__list {
   display: flex;
@@ -109,7 +130,6 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  // opacity: 0.8;
 }
 
 // ======================== services
@@ -178,7 +198,7 @@
   padding: 20px 10px;
   border-radius: 20px;
   // background-color: rgba($color: $yellow, $alpha: 0.1);
-  border: 2px solid $yellow;
+  border: 2px solid #fff;
   position: relative;
   margin-bottom: 25px;
   &:last-child {
@@ -244,9 +264,110 @@
   }
 }
 
+// ============ cases
+.cases {
+  background-color: $dark;
+  border-bottom: 2px solid $yellow;
+}
+
+.cases__inner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  // background-color: red;
+}
+
+.cases__title {
+  color: #fff;
+}
+
+.cases__swiper {
+  margin-top: 50px;
+  max-width: 1000px;
+  height: auto;
+}
+
+.cases__swiper-wrapper {
+  padding-bottom: 15px;
+}
+
+.cases__swiper-slide {
+  padding: 20px;
+  background-color: $dark;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.cases__slide-content {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cases__slide-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: $yellow;
+}
+
+.cases__slide-content-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #fff;
+  border-bottom: 1px solid $darkyellow;
+  display: inline-block;
+}
+
+.cases__slide-content-text {
+  font-size: 16px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.cases__swiper-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cases__swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+}
+
+.cases__swiper-pagination {
+  margin: 0 10px;
+  .swiper-pagination-bullet {
+    width: 40px;
+    border-radius: 4px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $darkyellow;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.cases__swiper-btn {
+  width: 30px;
+  height: 27px;
+  border-radius: 5px;
+  background-color: $darkyellow;
+  color: $dark;
+  font-size: 30px;
+  font-weight: 700;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
 // ============ advantages
 .advantages {
-  //   background-color: #fff;
   background-color: rgba($color: $yellow, $alpha: 0.3);
   border-bottom: 2px solid $yellow;
 }
@@ -502,12 +623,14 @@
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   font-weight: 18px;
   color: #fff;
   font-weight: 500;
-  max-width: 500px;
+  max-width: 1000px;
   .about__menu-link {
+    margin-bottom: 10px;
+    margin-right: 10px;
     transition: color 0.3s;
     &:hover {
       color: $yellow;
@@ -618,15 +741,13 @@
 }
 
 // ============================== media
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .hamburger {
     display: block;
   }
 
   .menu {
     height: 100%;
-    background-color: red;
   }
 
   .menu__list {
@@ -644,6 +765,12 @@
     transition: height 0.5s, padding 0.5s;
   }
 
+  .menu__contacts {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .header__title {
     font-size: 52px;
   }
@@ -655,7 +782,8 @@
 
   .services__inner,
   .advantages__inner,
-  .process__inner {
+  .process__inner,
+  .cases__inner {
     padding-top: 50px;
     padding-bottom: 50px;
   }

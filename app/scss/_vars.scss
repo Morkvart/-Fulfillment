@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../fonts/times_new_roman.woff2") format("woff2"),
+    url("../fonts/times_new_roman.woff") format("woff"),
+    url("../fonts/times_new_roman.ttf") format("truetype");
+}
+
 $dark: #212931;
 $yellow: #ffc800;
 $darkyellow: #fed840;
